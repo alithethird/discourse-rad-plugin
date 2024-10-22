@@ -50,7 +50,7 @@ function initializeTabs(api) {
     {id: 'discourse-rad-plugin-tabs'}
   );
 
-  api.addToolbarPopupMenuOptionsCallback(() => {
+  api.addComposerToolbarPopupMenuOption(() => {
     return {
       action: 'insertTabs',
       icon: 'caret-right',
