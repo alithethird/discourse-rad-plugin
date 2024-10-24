@@ -50,13 +50,11 @@ function initializeTabs(api) {
     {id: 'discourse-rad-plugin-tabs'}
   );
 
-  api.addComposerToolbarPopupMenuOption(() => {
-    return {
+  api.addComposerToolbarPopupMenuOption({
       action: 'insertTabs',
       icon: 'caret-right',
       label: 'tabs.title'
-    };
-  });
+    });
 
   ComposerController.reopen({
     actions: {
